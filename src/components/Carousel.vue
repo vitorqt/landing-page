@@ -6,11 +6,11 @@
       <carousel-indicator :index="2" :class="{active: show[2]}" @changeSlide="handleChangeSlide"></carousel-indicator>
     </carousel-indicators>
     <carousel-inner>
-      <carousel-item :class="{active: show[0]}" img src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" mask="black-slight" alt="First slide">
+      <carousel-item :class="{active: show[0]}" img :src="images.carousel2" mask="black-slight" alt="First slide">
       </carousel-item>
-      <carousel-item :class="{active: show[1]}" img src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" mask="black-slight" alt="Second slide">
+      <carousel-item :class="{active: show[1]}" img :src="images.carousel3" mask="black-slight" alt="Second slide">
       </carousel-item>
-      <carousel-item :class="{active: show[2]}" img src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" mask="black-slight" alt="Third slide">
+      <carousel-item :class="{active: show[2]}" img :src="images.carousel1" mask="black-slight" alt="Third slide">
       </carousel-item>
     </carousel-inner>
     <carousel-navigation @changeSlide="handleChangeSlide"></carousel-navigation>
@@ -28,6 +28,10 @@ import {
   ViewWrapper,
   MdMask
 } from "mdbvue";
+
+import Carousel1 from "@/assets/img/carousel/carousel1.jpg"
+import Carousel2 from "@/assets/img/carousel/carousel2.jpg"
+import Carousel3 from "@/assets/img/carousel/carousel3.jpg"
 
 export default {
   name: "CarouselPage",
@@ -57,6 +61,11 @@ export default {
         7: false,
         8: false,
         9: false
+      },
+      images: {
+        carousel1: Carousel1,
+        carousel2: Carousel2,
+        carousel3: Carousel3,
       }
     };
   },
