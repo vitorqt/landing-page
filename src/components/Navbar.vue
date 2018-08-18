@@ -19,10 +19,6 @@
                 </dropdown-menu>
             </dropdown>
             </navbar-nav>
-            <!-- Search form -->
-            <form class="form-inline">
-            <input class="form-control mr-auto p-2" type="text" placeholder="Search" aria-label="Search">
-            </form>
         </navbar-collapse>
     </navbar>
 </template>
