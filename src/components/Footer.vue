@@ -1,5 +1,5 @@
 <template>
-    <Footer color="unique-color-dark" class="page-footer font-small pt-0">
+    <div class="page-footer font-small pt-0 text-white footer-background footer">
         <div style="backgroundColor: #6351ce">
             <container class="text-left">
                 <row class="py-4 d-flex align-items-center">
@@ -53,19 +53,28 @@
                 &copy; 2018 Todos os direitos reservados: <a href="#"> RosybergKennel </a>
             </container>
         </div>
-    </Footer>
+    </div>
 </template>
 
 <script>
-import { Footer, Container, Row, Column } from 'mdbvue';
+import { Container, Row, Column } from 'mdbvue';
 
 export default {
   name: 'FooterPage',
   components: {
-    Footer,
     Container,
     Row,
     Column
   }
 };
 </script>
+
+<style>
+.footer {
+    background-color: #133337;
+}
+
+.footer-copyright {
+    background-color: #051c1f;
+}
+</style>
