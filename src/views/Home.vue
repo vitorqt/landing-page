@@ -80,6 +80,16 @@
       </section>
     </container>
     <!-- End of Section 2 -->
+    <!-- Section 2 -->
+      <section class="container-fluid">
+        <div class="row">
+          <div class="divisoria">
+            <h2 class="h1-responsive font-weight-bold my-5 text-div">Titulo</h2>
+            <p class="grey-text w-responsive mx-auto mb-5">Subtitulo</p>
+          </div>
+        </div>
+      </section>
+    <!-- End of Section 2 -->
   </div>
 </template>
 
@@ -112,5 +122,15 @@ export default {
 
 .line {
   width: 80%;
+}
+
+.divisoria {
+  background-color: rgb(11, 43, 11);
+  width: 100%;
+  height: 400px;
+}
+
+.text-div {
+  color: white;
 }
 </style>
