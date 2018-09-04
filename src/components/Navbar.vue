@@ -5,7 +5,7 @@
       </mdb-navbar-brand>
       <navbar-collapse>
         <navbar-nav right>
-          <navbar-item href="#" waves-fixed>INICIO</navbar-item>
+          <router-link to="/"><navbar-item waves-fixed>INICIO</navbar-item></router-link>
           <navbar-item href="#" waves-fixed>HISTÓRIA</navbar-item>
           <navbar-item href="#" waves-fixed>SERVIÇOS</navbar-item>
           <router-link to="/contato"><navbar-item waves-fixed>CONTATO</navbar-item></router-link>
