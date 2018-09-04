@@ -1,6 +1,6 @@
 <template>
     <div class="page-footer font-small pt-0 text-white footer-background footer">
-        <div style="backgroundColor: #6351ce">
+        <div style="backgroundColor: #318534">
             <container class="text-left">
                 <row class="py-4 d-flex align-items-center">
                     <column md="6" lg="5" class="text-center text-md-left mb-4 mb-md-0">
@@ -71,10 +71,10 @@ export default {
 
 <style>
 .footer {
-    background-color: #133337;
+    background-color: #0b2b0b;
 }
 
 .footer-copyright {
-    background-color: #051c1f;
+    background-color: #061406;
 }
 </style>

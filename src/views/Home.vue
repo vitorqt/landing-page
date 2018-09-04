@@ -12,19 +12,19 @@
           na maioria campeões e com filhos campeões no Brasil e exterior.</p>
         <row>
           <column md="4">
-            <fa icon="area-chart" size="3x" class="red-text"/>
-            <h5 class="font-weight-bold my-4">Qualidade</h5>
-            <p class="grey-text mb-md-0 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores aperiam minima assumenda deleniti hic.</p>
+            <fa icon="heartbeat" size="3x" class="red-text"/>
+            <h5 class="font-weight-bold my-4">Cuidados</h5>
+            <p class="grey-text mb-md-0 mb-5">Nossos cachorros são muito bem cuidados por profissionais altamente qualificados e que possuem muito amor por cachorros.</p>
           </column>
           <column md="4">
-            <fa icon="book" size="3x" class="cyan-text"/>
+            <fa icon="paw" size="3x" class="green-text"/>
             <h5 class="font-weight-bold my-4">Padrão da Raça</h5>
-            <p class="grey-text mb-md-0 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores aperiam minima assumenda deleniti hic.</p>
+            <p class="grey-text mb-md-0 mb-5">Uma das raças autóctones mais antigas, conhecido como o Cão Nacional da Grã-Bretanha e associado em todo o mundo com a determinação britânica e do lendário John Bull.</p>
           </column>
           <column md="4">
-            <fa icon="comments-o" size="3x" class="orange-text"/>
-            <h5 class="font-weight-bold my-4">Credenciado</h5>
-            <p class="grey-text mb-md-0 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores aperiam minima assumenda deleniti hic.</p>
+            <fa icon="arrow-up" size="3x" class="orange-text"/>
+            <h5 class="font-weight-bold my-4">Experiência</h5>
+            <p class="grey-text mb-md-0 mb-5">Possuímos muitos anos de experiência no mercado de cães, buscamos sempre oferecer o melhor serviço para nossos clientes.</p>
           </column>
         </row>
       </section>
@@ -35,7 +35,7 @@
     <container>
       <section class="text-center my-5">
         <h2 class="h1-responsive font-weight-bold my-5">Conheça nossos cães</h2>
-        <p class="grey-text w-responsive mx-auto mb-5">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit est laborum.</p>
+        <p class="grey-text w-responsive mx-auto mb-5">Veja abaixo uns dos melhores padreadores e matrizes que já tivemos.</p>
         <row class="text-center">
           <column lg="4" md="12" class="mb-lg-0 mb-4">
             <view-wrapper class="overlay rounded z-depth-1">
@@ -47,7 +47,7 @@
             <card-body class="pb-0">
               <h4 class="font-weight-bold my-3">Title of the news</h4>
               <p class="grey-text">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae.</p>
-              <btn color="indigo" size="sm"><fa icon="clone" class="left"/> View project</btn>
+              <btn color="indigo" size="sm"><fa icon="clone" class="left"/> Saber mais</btn>
             </card-body>
           </column>
           <column lg="4" md="12" class="mb-lg-0 mb-4">
@@ -60,7 +60,7 @@
             <card-body class="pb-0">
               <h4 class="font-weight-bold my-3">Title of the news</h4>
               <p class="grey-text">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae.</p>
-              <btn color="indigo" size="sm"><fa icon="clone" class="left"/> View project</btn>
+              <btn color="indigo" size="sm"><fa icon="clone" class="left"/> Saber mais</btn>
             </card-body>
           </column>
           <column lg="4" md="12" class="mb-lg-0 mb-4">
@@ -73,7 +73,7 @@
             <card-body class="pb-0">
               <h4 class="font-weight-bold my-3">Title of the news</h4>
               <p class="grey-text">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae.</p>
-              <btn color="indigo" size="sm"><fa icon="clone" class="left"/> View project</btn>
+              <btn color="indigo" size="sm"><fa icon="clone" class="left"/> Saber mais</btn>
             </card-body>
           </column>
         </row>
@@ -84,12 +84,20 @@
       <section class="container-fluid">
         <div class="row">
           <div class="divisoria">
-            <h2 class="h1-responsive font-weight-bold my-5 text-div">Titulo</h2>
-            <p class="grey-text w-responsive mx-auto mb-5">Subtitulo</p>
+            <h2 class="h1-responsive font-weight-bold my-5 text-div">Atuando no mercado de cães à mais de 20 anos</h2>
           </div>
         </div>
       </section>
     <!-- End of Section 2 -->
+    <!-- Section 3 -->
+    <container>
+      <section class="text-center my-5">
+        <h2 class="h1-responsive font-weight-bold my-5">Filhotes disponíveis</h2>
+        <p class="grey-text w-responsive mx-auto mb-5">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit est laborum.</p>
+        <puppy-carousel/>
+      </section>
+    </container>
+    <!-- End of Section 3 -->
   </div>
 </template>
 
@@ -97,12 +105,14 @@
 // @ is an alias to /src
 import Carousel from "@/components/Carousel.vue";
 import { Container, Row, Column, Fa, Btn, ViewWrapper, MdMask, Card, CardBody } from 'mdbvue';
+import PuppyCarousel from "@/components/PuppyCarousel.vue";
 
 export default {
   name: "home",
   components: {
     Carousel,
     Container,
+    PuppyCarousel,
     Row,
     Column,
     Fa,
