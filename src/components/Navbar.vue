@@ -1,7 +1,7 @@
 <template>
     <navbar class="fixed-transparent-navbar" position="top" dark href="#" scrolling transparent>
       <mdb-navbar-brand href="https://mdbootstrap.com/" class="text-navson-logo">
-        ROYSBERG KENNEL
+        <img src="../assets/logo-navbar.png" height="27%" width="27%" />
       </mdb-navbar-brand>
       <navbar-collapse>
         <navbar-nav right>

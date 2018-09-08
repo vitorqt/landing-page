@@ -1,5 +1,5 @@
 <template>
-  <container style="margin-top: 90px;">
+  <container style="margin-top: 150px;">
     <section class="my-5">
       <h2 class="h1-responsive font-weight-bold text-center my-5 margin-contact">Contato</h2>
       <p class="text-center w-responsive mx-auto pb-5">Entre em contato conosco.</p>
@@ -74,7 +74,6 @@ export default {
     Card,
     CardBody
   }
-
 };
 </script>
 
