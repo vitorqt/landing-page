@@ -1,16 +1,16 @@
 <template>
     <navbar class="fixed-transparent-navbar" position="top" dark href="#" scrolling transparent>
-      <mdb-navbar-brand href="https://mdbootstrap.com/">
-       Navbar
+      <mdb-navbar-brand href="https://mdbootstrap.com/" class="text-navson-logo">
+        ROYSBERG KENNEL
       </mdb-navbar-brand>
       <navbar-collapse>
         <navbar-nav right>
-          <router-link to="/"><navbar-item waves-fixed>INICIO</navbar-item></router-link>
-          <navbar-item href="#" waves-fixed>HISTÓRIA</navbar-item>
-          <navbar-item href="#" waves-fixed>SERVIÇOS</navbar-item>
-          <router-link to="/contato"><navbar-item waves-fixed>CONTATO</navbar-item></router-link>
-          <navbar-item href="#" waves-fixed>PARCEIROS</navbar-item>
-          <navbar-item href="#" waves-fixed>TRABALHE CONOSCO</navbar-item>
+          <router-link to="/"><navbar-item waves-fixed class="text-navson">INICIO</navbar-item></router-link>
+          <router-link to="/sobre"><navbar-item waves-fixed class="text-navson">HISTÓRIA</navbar-item></router-link>
+          <navbar-item href="#" waves-fixed class="text-navson">SERVIÇOS</navbar-item>
+          <router-link to="/contato"><navbar-item waves-fixed class="text-navson">CONTATO</navbar-item></router-link>
+          <navbar-item href="#" waves-fixed class="text-navson">PARCEIROS</navbar-item>
+          <navbar-item href="#" waves-fixed class="text-navson">TRABALHE CONOSCO</navbar-item>
         </navbar-nav>
       </navbar-collapse>
     </navbar>
@@ -100,5 +100,14 @@ export default {
 }
 .fixed-transparent-navbar {
   background-color: #0b2b0b !important;
+}
+
+.text-navson {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+}
+.text-navson-logo {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
 }
 </style>
